@@ -1,15 +1,16 @@
 # Add  code here!
-def prime(integer)
-  if integer <= 1
-    return false
+def prime?(n)
+
+   if n <= 1
+        return false
+  end
+  for i in (2...n)
+        if n % i == 0
+            return false
+    end
   end
 
-    for i in (2..integer)
-      if integer % i == 0
-        return false
-      end
-    end
+     return true
 
-    return true
 
-  end 
+ end
